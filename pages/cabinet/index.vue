@@ -1,3 +1,1 @@
-<template>
-    cabinet index
-</template>
+<template>cabinet index</template>

@@ -1,6 +1,4 @@
 <template>
-    index
-    <v-btn>
-        Кнопака
-    </v-btn>
+  index
+  <v-btn> Кнопака </v-btn>
 </template>
