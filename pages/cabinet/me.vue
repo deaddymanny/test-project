@@ -1,3 +1,0 @@
-<template>
-    /cabinet/me
-</template>

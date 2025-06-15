@@ -1,3 +1,6 @@
 <template>
-    cabinet index
+    <div>
+
+        cabinet index
+    </div>
 </template>

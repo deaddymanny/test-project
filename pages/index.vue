@@ -1,6 +1,5 @@
 <template>
-    index
-    <v-btn>
-        Кнопака
-    </v-btn>
+    <div>
+        index
+    </div>
 </template>

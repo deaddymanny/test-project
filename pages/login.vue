@@ -1,0 +1,19 @@
+<script setup lang="ts">
+let email = ref<string>("");
+let password = ref<string>("");
+
+function submit() {
+  console.log('submit, data:');
+  console.log(email.value, password.value);
+}
+</script>
+<template>
+  <v-row class="d-flex justify-center">
+    <v-col cols="4">
+      <v-text-field v-model="email" label="email" type="email"></v-text-field>
+      <v-text-field v-model="password" label="Пароль" type="password"></v-text-field>
+
+      <v-btn @click="submit">войти</v-btn>
+    </v-col>
+  </v-row>
+</template>
