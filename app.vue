@@ -1,13 +1,7 @@
 <template> 
 <NuxtLayout >
-  <MyComponent />
-  <div class="main-container">
     <NuxtPage />
-  </div>
-  </NuxtLayout>
+</NuxtLayout>
 </template>
 <style scoped>
-.main-container{
-  background-color: aqua;
-}
 </style>
