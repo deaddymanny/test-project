@@ -1,18 +1,19 @@
 <script setup lang="ts">
+const { login, user } = useAuth();
+
+const router = useRouter();
+
 let email = ref<string>("");
 let password = ref<string>("");
 
 function submit() {
-  console.log("submit, data:");
-  console.log(email.value, password.value);
-}
-
-function hover() {
-  console.log("hover");
+  login(email.value, password.value);
+  router.push("/cabinet");
 }
 </script>
 <template>
   <v-row class="d-flex justify-center">
+    {{ user }}
     <v-col cols="4">
       <v-text-field v-model="email" label="email" type="email"></v-text-field>
       <v-text-field
