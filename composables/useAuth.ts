@@ -11,8 +11,20 @@ export const useAuth = () => {
     user.value.email = email;
     user.value.password = password;
   }
+
+  function registration(email: string, password: string) {
+    $fetch("http://localhost:3444/users/create", {
+      method: "POST",
+      body: {
+        email,
+        password,
+      },
+    });
+  }
+
   return {
     user: readonly(user),
     login,
+    registration,
   };
 };
